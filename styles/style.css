@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 3rem;
+    background-color: #B05423;
+    box-shadow: 0px 0px 50px 15px white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4.3rem;
+    font-size: 1.3rem;
+}
+
+.header h1 {
+    margin-bottom: 1.6rem;
+}
+
+.title h2 {
+    margin-bottom: 1.3rem;
+    font-size: 2.4rem;
+}
+
+.input-margin input {
+    margin-bottom: 1.3rem;
+}
+
+.quantity-block {
+    display: flex;
+    flex-direction: column;
+    margin: 1.3rem;
+    font-size: 1.6rem;
+}
+
+.quantity-block input {
+    margin-top: .8rem;
+    margin-bottom: 1.9rem;
+    width: 25rem;
+    height: 3rem;
+    border-radius: .8rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+.meat-block {
+    margin: 1.3rem;
+    font-size: 1.6rem;
+}
+
+.drink-block {
+    margin: 1.3rem;
+    font-size: 1.6rem;
+}
+
+#calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1.3rem 10rem;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+}
+
+.calc-generate {
+    float: right;
+    background-color: #753d1f50;
+    height: 50rem;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: calc(75.6rem + 45rem);
+    }
+    .header {
+        font-size: 1rem;
+    }
+    .title h2 {
+        font-size: 1.8rem;
+    }
+    .quantity-block {
+        font-size: 1.3rem;
+    }
+    .meat-block {
+        font-size: 1.3rem;
+    }
+    .drink-block {
+        font-size: 1.3rem;
+    }
+    #calc {
+        font-size: 1.3rem;
+        margin-bottom: 1.6rem;
+    }
+    .calc-generate {
+        font-size: 1.5rem;
+        margin-top: 1.6rem;
+        float: none;
+        width: 90%;
+        margin: auto;
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        padding: 2rem;
+    }
+    .calc-generate {
+        bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 1rem;
+    }
+    .calc-generate {
+        bottom: 5%;
+    }
+    .quantity-block input {
+        width: 22rem;
+    }
+    .header {
+        font-size: .8rem;
+    }
+    .title h2 {
+        font-size: 1.5rem;
+    }
+}

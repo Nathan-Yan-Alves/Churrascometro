@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="header">
+                <h1>Churrascômetro - O melhor aliado para o seu churrasco</h1>
+                <h2>Digite as informações para obter a quantidade exata de carnes e bebidas para o seu churrasco!</h2>
+            </div>
+            <div class="info">
+                <div class="calc-generate"></div>
+                <div class="quantity-block title">
+                    <h2>Quantidade de pessoas e duração </h2>
+                    <label for="adults">Adultos:</label>
+                    <input type="number" placeholder="Quantidade de adultos" id="adults" required min="0">
+                    <label for="kids">Crianças:</label>
+                    <input type="number" placeholder="Quantidade de crianças" id="kids" required min="0">
+                    <label for="duration">Duração:</label>
+                    <input type="number" placeholder="Duração do churrasco(em horas)" id="duration" required min="1">
+                </div>
+                <div class="meat-block title input-margin">
+                    <h2>Carnes e acompanhamentos </h2>
+                    <input type="checkbox" name="meats" id="sausage"> 
+                    <label for="sausage">Linguiça</label><br>
+                    <input type="checkbox" name="meats" id="beef">
+                    <label for="beef">Carne de vaca</label><br>
+                    <input type="checkbox" name="meats" id="chicken">
+                    <label for="chicken">Frango</label><br>
+                    <input type="checkbox" name="meats" id="garlic_bread">
+                    <label for="garlic_bread">Pão de alho</label>
+                </div>
+                <div class="drink-block title input-margin">
+                    <h2>Bebidas </h2>
+                    <input type="checkbox" name="drinks" id="beer"> 
+                    <label for="beer">Cerveja</label><br>
+                    <input type="checkbox" name="drinks" id="soft_drink">
+                    <label for="soft_drink">Refrigerante</label><br>
+                    <input type="checkbox" name="drinks" id="juice">
+                    <label for="juice">Suco</label><br>
+                </div>
+                <a href="#" id="calc">Calcular</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
